@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n2D-qt-0vB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q0s-2T-YyK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Planet List Table View Controller-->
         <scene sceneID="RmW-dI-peN">
             <objects>
-                <tableViewController id="n2D-qt-0vB" sceneMemberID="viewController">
+                <tableViewController id="n2D-qt-0vB" customClass="PlanetListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="AH2-F4-gbq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,28 +52,28 @@
                             <outlet property="delegate" destination="n2D-qt-0vB" id="HVM-A4-8hA"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="cWp-Dy-ec4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B40-es-3Xd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134" y="115"/>
+            <point key="canvasLocation" x="1072.8" y="114.69265367316342"/>
         </scene>
-        <!--View Controller-->
+        <!--Planet Detail View Controller-->
         <scene sceneID="dDo-mT-sZR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hot-6e-ugP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="9mj-1l-oKI" sceneMemberID="viewController">
+                <viewController id="9mj-1l-oKI" customClass="CRMPlanetDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LEl-7j-kqm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="apa-vp-3hb">
-                                <rect key="frame" x="8" y="28" width="359" height="300"/>
+                                <rect key="frame" x="8" y="72" width="359" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="56u-zF-OIU"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cWp-tz-b9D">
-                                <rect key="frame" x="8" y="336" width="359" height="101.5"/>
+                                <rect key="frame" x="8" y="380" width="359" height="101.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="128" translatesAutoresizingMaskIntoConstraints="NO" id="xh0-9K-aVl">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="20.5"/>
@@ -140,9 +140,34 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cKg-2H-dz8"/>
                     </view>
+                    <connections>
+                        <outlet property="dayLengthLabel" destination="Xhp-11-zju" id="Upv-pO-Rc4"/>
+                        <outlet property="diameterlabel" destination="bob-yF-Dbz" id="Rdy-ng-QOY"/>
+                        <outlet property="distanceFromSunLabel" destination="Mlk-44-cVa" id="kre-p0-qIf"/>
+                        <outlet property="planetImageView" destination="apa-vp-3hb" id="Kcr-zX-HGv"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hot-6e-ugP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="115"/>
+            <point key="canvasLocation" x="1751.2" y="114.69265367316342"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yK1-cV-tiN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q0s-2T-YyK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Siw-PH-cYm">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="n2D-qt-0vB" kind="relationship" relationship="rootViewController" id="3TH-hp-A1t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wl9-38-IDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="114.69265367316342"/>
         </scene>
     </scenes>
 </document>

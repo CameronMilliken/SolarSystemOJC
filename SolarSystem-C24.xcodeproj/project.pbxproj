@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		B42D63F42211DEE900346AF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B42D63F32211DEE900346AF7 /* AppDelegate.m */; };
 		B42D63FA2211DEE900346AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42D63F82211DEE900346AF7 /* Main.storyboard */; };
-		B42D63FC2211DEEA00346AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42D63FB2211DEEA00346AF7 /* Assets.xcassets */; };
 		B42D63FF2211DEEA00346AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42D63FD2211DEEA00346AF7 /* LaunchScreen.storyboard */; };
 		B42D64022211DEEA00346AF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B42D64012211DEEA00346AF7 /* main.m */; };
 		B42D640A2211E6BA00346AF7 /* PlanetCRM.m in Sources */ = {isa = PBXBuildFile; fileRef = B42D64092211E6BA00346AF7 /* PlanetCRM.m */; };
 		B42D640D2211ECEC00346AF7 /* CRMPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42D640C2211ECEC00346AF7 /* CRMPlanetController.m */; };
+		B42D64102211F00300346AF7 /* PlanetListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42D640F2211F00300346AF7 /* PlanetListTableViewController.m */; };
+		B42D64122211F4C800346AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42D64112211F4C800346AF7 /* Assets.xcassets */; };
+		B42D64152211F77B00346AF7 /* CRMPlanetDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42D64142211F77B00346AF7 /* CRMPlanetDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +23,6 @@
 		B42D63F22211DEE900346AF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B42D63F32211DEE900346AF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B42D63F92211DEE900346AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B42D63FB2211DEEA00346AF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42D63FE2211DEEA00346AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B42D64002211DEEA00346AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B42D64012211DEEA00346AF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -29,6 +30,11 @@
 		B42D64092211E6BA00346AF7 /* PlanetCRM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetCRM.m; sourceTree = "<group>"; };
 		B42D640B2211ECEC00346AF7 /* CRMPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMPlanetController.h; sourceTree = "<group>"; };
 		B42D640C2211ECEC00346AF7 /* CRMPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMPlanetController.m; sourceTree = "<group>"; };
+		B42D640E2211F00300346AF7 /* PlanetListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetListTableViewController.h; sourceTree = "<group>"; };
+		B42D640F2211F00300346AF7 /* PlanetListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetListTableViewController.m; sourceTree = "<group>"; };
+		B42D64112211F4C800346AF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B42D64132211F77B00346AF7 /* CRMPlanetDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMPlanetDetailViewController.h; sourceTree = "<group>"; };
+		B42D64142211F77B00346AF7 /* CRMPlanetDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMPlanetDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +67,63 @@
 		B42D63F12211DEE900346AF7 /* SolarSystem-C24 */ = {
 			isa = PBXGroup;
 			children = (
-				B42D63F22211DEE900346AF7 /* AppDelegate.h */,
-				B42D63F32211DEE900346AF7 /* AppDelegate.m */,
-				B42D63F82211DEE900346AF7 /* Main.storyboard */,
-				B42D63FB2211DEEA00346AF7 /* Assets.xcassets */,
-				B42D63FD2211DEEA00346AF7 /* LaunchScreen.storyboard */,
-				B42D64002211DEEA00346AF7 /* Info.plist */,
-				B42D64012211DEEA00346AF7 /* main.m */,
+				B42D641A2211F7F000346AF7 /* Storyboard */,
+				B42D64162211F78700346AF7 /* Model */,
+				B42D64172211F79500346AF7 /* ModelController */,
+				B42D64182211F7A600346AF7 /* View Controllers */,
+				B42D64192211F7E500346AF7 /* Resources */,
+			);
+			path = "SolarSystem-C24";
+			sourceTree = "<group>";
+		};
+		B42D64162211F78700346AF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				B42D64082211E6BA00346AF7 /* PlanetCRM.h */,
 				B42D64092211E6BA00346AF7 /* PlanetCRM.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B42D64172211F79500346AF7 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
 				B42D640B2211ECEC00346AF7 /* CRMPlanetController.h */,
 				B42D640C2211ECEC00346AF7 /* CRMPlanetController.m */,
 			);
-			path = "SolarSystem-C24";
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		B42D64182211F7A600346AF7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B42D640E2211F00300346AF7 /* PlanetListTableViewController.h */,
+				B42D640F2211F00300346AF7 /* PlanetListTableViewController.m */,
+				B42D64132211F77B00346AF7 /* CRMPlanetDetailViewController.h */,
+				B42D64142211F77B00346AF7 /* CRMPlanetDetailViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B42D64192211F7E500346AF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B42D64112211F4C800346AF7 /* Assets.xcassets */,
+				B42D64012211DEEA00346AF7 /* main.m */,
+				B42D64002211DEEA00346AF7 /* Info.plist */,
+				B42D63FD2211DEEA00346AF7 /* LaunchScreen.storyboard */,
+				B42D63F22211DEE900346AF7 /* AppDelegate.h */,
+				B42D63F32211DEE900346AF7 /* AppDelegate.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B42D641A2211F7F000346AF7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B42D63F82211DEE900346AF7 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42D63FF2211DEEA00346AF7 /* LaunchScreen.storyboard in Resources */,
-				B42D63FC2211DEEA00346AF7 /* Assets.xcassets in Resources */,
+				B42D64122211F4C800346AF7 /* Assets.xcassets in Resources */,
 				B42D63FA2211DEE900346AF7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,8 +196,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42D64152211F77B00346AF7 /* CRMPlanetDetailViewController.m in Sources */,
 				B42D64022211DEEA00346AF7 /* main.m in Sources */,
 				B42D640A2211E6BA00346AF7 /* PlanetCRM.m in Sources */,
+				B42D64102211F00300346AF7 /* PlanetListTableViewController.m in Sources */,
 				B42D640D2211ECEC00346AF7 /* CRMPlanetController.m in Sources */,
 				B42D63F42211DEE900346AF7 /* AppDelegate.m in Sources */,
 			);
@@ -293,7 +345,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AH8N698PRG;
-				INFOPLIST_FILE = "SolarSystem-C24/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SolarSystem-C24/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AH8N698PRG;
-				INFOPLIST_FILE = "SolarSystem-C24/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SolarSystem-C24/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
